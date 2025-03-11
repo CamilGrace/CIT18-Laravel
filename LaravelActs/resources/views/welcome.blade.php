@@ -9,5 +9,6 @@
     <h1 class="text-3xl font-bold underline">
       Hello world!
     </h1>
+    <p class="text-blue-500 font-bold">If this is blue, Tailwind is working!</p>
   </body>
 </html>
