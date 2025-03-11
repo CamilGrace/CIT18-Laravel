@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GreetController;
+use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -12,3 +14,6 @@ Route::get('/greet', function () {
 });
 
 Route::get('/greetings', [GreetController::class, 'greetPage']);
+
+//Migration and Models Activity
+Route::resource('tasks', TaskController::class);
